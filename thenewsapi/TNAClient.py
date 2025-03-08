@@ -27,7 +27,7 @@ class TheNewsAPIClient(object):
         page=None
     ):
         # Payload
-        payload = {}
+        payload = { }
         
         # Search and search fields
         if search is not None:
