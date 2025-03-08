@@ -704,3 +704,9 @@ class TheNewsAPIClient(object):
             raise TheNewsAPIException(r.json()['error']['message'])
         
         return r.json()
+        
+if __name__ == '__main__':
+    def test_mock():
+        assert True
+
+    
