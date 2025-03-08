@@ -24,7 +24,7 @@ def date_to_string(dt):
         return dt.strftime(DATETIME_FMT)
     elif isinstance(dt, datetime.date):
         return dt.strftime(DATE_FMT)
-    elif is_valid_num(dt):
+    elif isinstance(dt, int):
         return datetime.datetime.utcfromtimestamp(dt).strftime(DATETIME_FMT)
     else:
         raise TypeError("Date input must be one of: str, date, datetime, float, int, or None")
