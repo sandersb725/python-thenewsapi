@@ -2,6 +2,9 @@ try:
   from setuptools import setup
 except ImportError:
   from distutils.core import setup
+
+def test_dummy():
+  pass
   
 with open("README.md", "r") as fh:
     long_description = fh.read()
