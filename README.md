@@ -1,7 +1,7 @@
 # python-thenewsapi
 A python wrapper for https://thenewsapi.com
 
-All payloads from their website are supported in the functions
+All params from their website are supported in the functions
 
 #### Top Stories
 ```
