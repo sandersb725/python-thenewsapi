@@ -9,7 +9,7 @@ with open('README.md', 'r') as f:
 setup(
 	name='python-thenewsapi',
 	packages=['thenewsapi'],
-	version='0.0.1',
+	version='0.1.0',
 	description='A python wrapper for thenewsapi.com',
 	author='Brighton Sanders',
 	url='https://github.com/sandersb725/python-thenewsapi',
