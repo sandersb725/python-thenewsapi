@@ -63,3 +63,7 @@ headlines = tna.get_headlines()
     
 print(headlines)
 ```
+If you want to use multiple values for one param, I suggest you use lists to make it more relateable, like:
+```
+tna.get_top_stories(locale=['ae','ar'])
+```
