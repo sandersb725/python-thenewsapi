@@ -5,13 +5,10 @@ except ImportError:
 
 with open('README.md', 'r') as f:
 	long_description = f.read()
-	
-with open('requirements.txt', 'r') as f:
-	packages = f.read().replace('/','.').split('\n')
 
 setup(
 	name='python-thenewsapi',
-	packages=packages,
+	packages=['requests==2.32.3'],
 	version='0.1.1',
 	description='A python wrapper for thenewsapi.com',
 	author='Brighton Sanders',
