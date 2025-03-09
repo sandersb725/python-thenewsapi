@@ -3,6 +3,14 @@ A python wrapper for https://thenewsapi.com
 
 All params from their website are supported in the functions
 
+You can install by using:
+```
+pip install python-thenewsapi
+```
+Or build it your self using `setup.py`
+
+## Functions
+
 #### Top Stories
 ```
 import thenewsapi
