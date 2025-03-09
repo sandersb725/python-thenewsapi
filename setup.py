@@ -7,7 +7,8 @@ with open('README.md', 'r') as f:
 	long_description = f.read()
 	
 with open('requirements.txt', 'r') as f:
-	packages = f.read().split('\n')
+	packages = f.read().replace('/','.').split('\n')
+
 setup(
 	name='python-thenewsapi',
 	packages=packages,
