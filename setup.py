@@ -16,7 +16,7 @@ setup(
 	long_description=long_description,
 	long_description_content_type="text/markdown",
 	author_email='bus120610@gmail.com',
-	install_requires=['<requests>'],
+	install_requires=['requests==2.32.3'],
 	classifiers = [
 		'Intended Audience :: End Users/Desktop',
 		'Intended Audience :: Developers',
