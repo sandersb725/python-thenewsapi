@@ -178,8 +178,9 @@ class TheNewsAPIClient(object):
         
         # Set language if none
         if payload.get("language") is None:
-            payload["language"] = const.DEFAULT_LANGUAGES.get(locale)
-        
+            if isinstance(locale, str):
+                payload["language"] = const.DEFAULT_LANGUAGES.get(locale)
+
         # Get content
         r = requests.get(f'{const.TOP_URL}?api_token={self.api_token}', params=payload)
         
@@ -358,7 +359,8 @@ class TheNewsAPIClient(object):
         
         # Set language if none
         if payload.get("language") is None:
-            payload["language"] = const.DEFAULT_LANGUAGES.get(locale)
+            if isinstance(locale, str):
+                payload["language"] = const.DEFAULT_LANGUAGES.get(locale)
         
         # Get content
         r = requests.get(f'{const.ALL_URL}?api_token={self.api_token}', params=payload)
@@ -695,7 +697,8 @@ class TheNewsAPIClient(object):
         
         # Set language if none
         if payload.get("language") is None:
-            payload["language"] = const.DEFAULT_LANGUAGES.get(locale)
+            if isinstance(locale, str):
+                payload["language"] = const.DEFAULT_LANGUAGES.get(locale)
         
         # Get content
         r = requests.get(f'{const.HEADLINES_URL}?api_token={self.api_token}', params=payload)
