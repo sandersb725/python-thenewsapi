@@ -6,7 +6,7 @@ except ImportError:
 with open('README.md', 'r') as f:
 	long_description = f.read()
 	
-with open('requirements.txt', 'r' as d:
+with open('requirements.txt', 'r') as f:
 	packages = f.readlines()
 setup(
 	name='python-thenewsapi',
