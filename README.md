@@ -4,15 +4,15 @@ A python wrapper for https://thenewsapi.com
 All params from their website are supported in the functions
 
 You can install by using:
-````python
+````bash
 pip install python-thenewsapi
-```
+````
 Or build it your self using `setup.py`
 
 ## Functions
 
 #### Top Stories
-```
+````python
 import thenewsapi
 
 tna = thenewsapi.TheNewsAPIClient('API_KEY')
@@ -20,9 +20,9 @@ tna = thenewsapi.TheNewsAPIClient('API_KEY')
 top_stories = tna.get_top_stories()
     
 print(top_stories)
-```
+````
 #### All News
-```
+````python
 import thenewsapi
 
 tna = thenewsapi.TheNewsAPIClient(API_KEY)
@@ -30,7 +30,7 @@ tna = thenewsapi.TheNewsAPIClient(API_KEY)
 all_news = tna.get_all_news()
     
 print(all_news)
-```
+````
 #### Similar News
 ```
 import thenewsapi
